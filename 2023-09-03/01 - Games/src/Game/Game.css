@@ -1,0 +1,8 @@
+.Game > span {
+    text-align: center;
+    color: lightcoral;
+}
+
+.Game {
+    border: 1px solid;
+}

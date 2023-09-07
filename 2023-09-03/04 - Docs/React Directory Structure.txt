@@ -1,0 +1,40 @@
+Directory Structure
+
+src
+
+  Assets
+    Images
+    Videos
+    Fonts
+
+  Services
+    Calc.ts
+    ColorPicker.ts
+
+  Components
+    LayoutArea
+      Layout
+      Menu
+      Footer
+      Header
+
+    ProductsArea
+
+      ProductList
+        ProductList.tsx
+        ProductList.css
+
+      AddProduct
+        AddProduct.tsx
+        AddProduct.css
+
+    SuppliersArea
+    AdminArea
+    SharedArea
+
+
+
+
+
+
+

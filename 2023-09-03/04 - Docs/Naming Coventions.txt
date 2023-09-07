@@ -1,0 +1,4 @@
+Lowercase Camel: myBestFriend
+Uppercase Camel: MyBestFriend
+Kebab Naming:    my-best-friend
+Snake Naming:    my_best_friend
