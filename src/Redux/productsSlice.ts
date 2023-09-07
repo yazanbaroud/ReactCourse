@@ -45,3 +45,9 @@ const productsSlice = createSlice({
         deleteOne
     }
 })
+
+//export all actions (each reducer will create its own action)
+export const productsActions = productsSlice.actions
+
+//export reducers
+export const productReducer = productsSlice.reducer
