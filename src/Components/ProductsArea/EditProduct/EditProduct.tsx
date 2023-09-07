@@ -28,7 +28,7 @@ function EditProduct(): JSX.Element {
 
             })
             .catch(err => alert(err.message))
-    })
+    },[])
 
     async function send(product: ProductModel) {
         try {

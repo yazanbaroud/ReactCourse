@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import "./Menu.css";
+import TotalProducts from "../../ProductsArea/TotalProducts/TotalProducts";
 
 function Menu(): JSX.Element {
 
@@ -15,6 +16,7 @@ function Menu(): JSX.Element {
             <NavLink to="/about">About</NavLink>
             <NavLink to="/contactUs">ContactUs</NavLink>
             <NavLink to="/employees">Employees</NavLink>
+            <TotalProducts />
 
 			{/* <a href="/home">Home</a>
 			<a href="/products">Products</a>
