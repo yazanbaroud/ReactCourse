@@ -1,0 +1,20 @@
+.Menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+.Menu a {
+    font-size: 1.4rem;
+}
+
+.Menu > .active {
+    color: green;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Arial;
+}

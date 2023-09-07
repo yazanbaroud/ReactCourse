@@ -1,0 +1,21 @@
+html, body, #root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    text-align: center;
+    background-image: linear-gradient(45deg, green, lightgreen);
+    color: black;
+}
+
+a{
+    color: blue;
+}
+
+a:focus,a:active {
+    color: aqua;
+}
+
+img {
+    width: 100px !important;
+    height: 100px !important;
+}

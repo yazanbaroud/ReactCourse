@@ -1,0 +1,27 @@
+.Container {
+    display: inline-block;
+    border: 1px solid;
+    margin: 10px;
+    padding: 10px;
+}
+
+.NiceText {
+    color: lightgray;
+    background-color: darkorange;
+    font-weight: bold;
+}
+
+.CoolText {
+    color: blue;
+    background-color: green;
+    display: inline-block;
+}
+
+.Food {
+    display: flex;
+    flex-direction: column;
+}
+.Food img {
+    width: 100px;
+    height: 100px;
+}
