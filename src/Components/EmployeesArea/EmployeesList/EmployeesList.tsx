@@ -3,16 +3,20 @@ import EmployeeModel from "../../../Models/EmployeeModel";
 import "./EmployeesList.css";
 import employeeService from "../../../Services/EmployeeService";
 import useTitle from "../../../Utils/UseTitle";
+import { useSelector } from "react-redux";
+import { AppState } from "../../../Redux/AppState";
 
 function EmployeesList(): JSX.Element {
 
     useTitle("Employees")
-    const [employees, setEmployees] = useState<EmployeeModel[]>()
+
+    const employees = useSelector((appState: AppState) => appState.employees)
+    // const [employees, setEmployees] = useState<EmployeeModel[]>()
 
 
     useEffect(() => {
         employeeService.getAllEmployees()
-            .then(employees => setEmployees(employees))
+            // .then(employees => setEmployees(employees))
             .catch(err => alert(err))
     }, [])
 

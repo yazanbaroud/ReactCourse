@@ -53,6 +53,19 @@ class ProductsService {
         await axios.delete(appConfig.productsUrl + id)
         appStore.dispatch(productsActions.deleteOne(id))
     }
+
+
+    public async getTop3Products(): Promise<ProductModel[]> {
+        const response = await axios.get<ProductModel[]>(appConfig.productsTop3Url)
+        const products = response.data
+        return products
+    }
+
+    public async getOutOfStockProducts(): Promise<ProductModel[]> {
+        const response = await axios.get<ProductModel[]>(appConfig.productsOutOfStockUrl)
+        const products = response.data
+        return products
+    }
 }
 
 const productsService = new ProductsService()
