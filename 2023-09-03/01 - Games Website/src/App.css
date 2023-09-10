@@ -1,0 +1,9 @@
+.App > h1 {
+  color: green;
+  text-align: center;
+}
+
+.App > p {
+  color: darkgoldenrod;
+  font-weight: bold;
+}
