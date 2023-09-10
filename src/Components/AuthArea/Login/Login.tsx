@@ -3,6 +3,7 @@ import "./Login.css";
 import { useForm } from "react-hook-form";
 import CredentialsModel from "../../../Models/CredentialsModel";
 import authService from "../../../Services/AuthService";
+import notification from "../../../Utils/Notification";
 
 function Login(): JSX.Element {
 
@@ -12,11 +13,13 @@ function Login(): JSX.Element {
     async function send(credentials: CredentialsModel) {
         try{
             await authService.login(credentials)
-            alert("welcome back")
+            // alert("welcome back")
+            notification.success("welcome back")
             navigate("/home")
         }
         catch(err: any){
-            alert(err.message)
+            notification.error(err)
+            // alert(err.message)
         }
     }
 

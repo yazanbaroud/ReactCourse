@@ -3,12 +3,14 @@ import "./AuthMenu.css";
 import { AppState } from "../../../Redux/AppState";
 import { NavLink } from "react-router-dom";
 import authService from "../../../Services/AuthService";
+import notification from "../../../Utils/Notification";
 
 function AuthMenu(): JSX.Element {
 
     function logMeOut() : void{
         authService.logout()
-        alert("bye bye ...")
+        notification.success("bye bye ...")
+        // alert("bye bye ...")
     }
 
     const user = useSelector((appState: AppState) => appState.user)

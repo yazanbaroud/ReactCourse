@@ -6,6 +6,8 @@ import RandomImage from "../RandomImage/RandomImage";
 import Tune from "../Tune/Tune";
 import useTitle from "../../../Utils/UseTitle";
 import Greeting from "../../SharedArea/Greeting/Greeting";
+import notification from "../../../Utils/Notification";
+import LinkedIn from "../LinkedIn/LinkedIn";
 
 function About(): JSX.Element {
     useTitle("About")
@@ -36,7 +38,8 @@ function About(): JSX.Element {
     }
 
     function showNow() {
-        alert(now.toLocaleTimeString() + now.toLocaleDateString())
+        notification.success(now.toLocaleTimeString() + now.toLocaleDateString())
+        // alert(now.toLocaleTimeString() + now.toLocaleDateString())
     }
 
     const navigate = useNavigate()
@@ -89,6 +92,8 @@ function About(): JSX.Element {
             <hr />
 
             <Tune/>
+            <hr />
+            <LinkedIn />
         </div>
     );
 }

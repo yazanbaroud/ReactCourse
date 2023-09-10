@@ -6,6 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { appStore } from './Redux/AppState';
 import interceptors from './Utils/Interceptors';
+import { ThemeContext, appTheme } from './Utils/Context';
 
 // create interceptors once
 interceptors.create()
@@ -15,9 +16,11 @@ const root = ReactDOM.createRoot(
 );
 root.render(
     <BrowserRouter>
-    <Provider store={appStore}>
-        <Layout />
-    </Provider>
+        <Provider store={appStore}>
+            <ThemeContext.Provider value={appTheme} >
+                <Layout />
+            </ThemeContext.Provider>
+        </Provider>
     </BrowserRouter>
 );
 
