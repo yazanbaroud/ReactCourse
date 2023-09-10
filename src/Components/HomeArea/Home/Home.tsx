@@ -12,6 +12,7 @@ import Search from "../Search/Search";
 import useTitle from "../../../Utils/UseTitle";
 import Orders from "../../SharedArea/Orders/Orders";
 import Spinner from "../../SharedArea/Spinner/Spinner";
+import Clock from "../../SharedArea/Clock/Clock";
 
 interface foodType {
     id: number,
@@ -62,6 +63,7 @@ function Home(): JSX.Element {
 
     return (
         <div className="Home">
+            <Clock format="12h" />
             <Search />
             {/* conditional rendering */}
             
